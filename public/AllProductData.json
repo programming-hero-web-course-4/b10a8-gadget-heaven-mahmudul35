@@ -1,0 +1,204 @@
+[
+  {
+    "product_id": "P001",
+    "product_title": "Smartphone X",
+    "product_image": "smartphone_x.jpg",
+    "category": "phones",
+    "price": 650,
+    "description": "High-performance smartphone with stunning display.",
+    "specification": ["6.5 inch OLED display", "128GB Storage", "5G enabled"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "P002",
+    "product_title": "Smartphone Y",
+    "product_image": "smartphone_y.jpg",
+    "category": "phones",
+    "price": 720,
+    "description": "Powerful smartphone with excellent battery life.",
+    "specification": [
+      "6.7 inch OLED display",
+      "256GB Storage",
+      "Triple Camera"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "P003",
+    "product_title": "Smartphone Z",
+    "product_image": "smartphone_z.jpg",
+    "category": "phones",
+    "price": 560,
+    "description": "Affordable smartphone with all essential features.",
+    "specification": ["6.1 inch LCD display", "64GB Storage", "Dual Camera"],
+    "availability": true,
+    "rating": 4.2
+  },
+  {
+    "product_id": "P004",
+    "product_title": "Smartphone Lite",
+    "product_image": "smartphone_lite.jpg",
+    "category": "phones",
+    "price": 500,
+    "description": "Budget-friendly phone with impressive performance.",
+    "specification": ["5.8 inch HD display", "64GB Storage", "Single Camera"],
+    "availability": false,
+    "rating": 4.0
+  },
+  {
+    "product_id": "P005",
+    "product_title": "Smartphone Pro",
+    "product_image": "smartphone_pro.jpg",
+    "category": "phones",
+    "price": 900,
+    "description": "Advanced smartphone with pro-grade features.",
+    "specification": ["6.8 inch OLED display", "512GB Storage", "Quad Camera"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P006",
+    "product_title": "Smartphone Ultra",
+    "product_image": "smartphone_ultra.jpg",
+    "category": "phones",
+    "price": 1100,
+    "description": "Flagship smartphone with exceptional capabilities.",
+    "specification": ["6.9 inch Super AMOLED", "1TB Storage", "5G enabled"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "P007",
+    "product_title": "Smartphone Max",
+    "product_image": "smartphone_max.jpg",
+    "category": "phones",
+    "price": 750,
+    "description": "Large-screen smartphone with all-day battery.",
+    "specification": ["6.8 inch display", "256GB Storage", "Triple Camera"],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": "P008",
+    "product_title": "Laptop Pro 15",
+    "product_image": "laptop_pro_15.jpg",
+    "category": "computers",
+    "price": 1200,
+    "description": "Professional-grade laptop with powerful processing.",
+    "specification": ["15 inch Retina display", "512GB SSD", "16GB RAM"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P009",
+    "product_title": "Gaming Laptop G",
+    "product_image": "gaming_laptop_g.jpg",
+    "category": "computers",
+    "price": 1500,
+    "description": "High-performance laptop optimized for gaming.",
+    "specification": ["17 inch 144Hz display", "1TB SSD", "32GB RAM"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P010",
+    "product_title": "Laptop Air",
+    "product_image": "laptop_air.jpg",
+    "category": "computers",
+    "price": 1000,
+    "description": "Lightweight and portable laptop for daily use.",
+    "specification": ["13 inch display", "256GB SSD", "8GB RAM"],
+    "availability": false,
+    "rating": 4.5
+  },
+  {
+    "product_id": "P011",
+    "product_title": "Smartwatch S",
+    "product_image": "smartwatch_s.jpg",
+    "category": "smart watches",
+    "price": 250,
+    "description": "Stylish smartwatch with health tracking features.",
+    "specification": ["Heart rate monitor", "GPS", "Water-resistant"],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "product_id": "P012",
+    "product_title": "Smartwatch Fit",
+    "product_image": "smartwatch_fit.jpg",
+    "category": "smart watches",
+    "price": 300,
+    "description": "Fitness-oriented smartwatch with long battery life.",
+    "specification": ["Activity tracking", "Sleep monitor", "Waterproof"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "P013",
+    "product_title": "Smartwatch Active",
+    "product_image": "smartwatch_active.jpg",
+    "category": "smart watches",
+    "price": 280,
+    "description": "Sports-focused smartwatch with various modes.",
+    "specification": ["Heart rate monitor", "GPS", "Sturdy build"],
+    "availability": false,
+    "rating": 4.2
+  },
+  {
+    "product_id": "P014",
+    "product_title": "Portable Power Bank P",
+    "product_image": "power_bank_p.jpg",
+    "category": "power banks",
+    "price": 65,
+    "description": "Compact power bank for charging on the go.",
+    "specification": ["10000mAh", "Dual USB output", "LED indicator"],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "product_id": "P015",
+    "product_title": "Power Bank Max",
+    "product_image": "power_bank_max.jpg",
+    "category": "power banks",
+    "price": 85,
+    "description": "High-capacity power bank for extended charging.",
+    "specification": ["20000mAh", "Fast charging", "LED display"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "P016",
+    "product_title": "Slim Power Bank S",
+    "product_image": "slim_power_bank_s.jpg",
+    "category": "power banks",
+    "price": 55,
+    "description": "Ultra-slim power bank for portability.",
+    "specification": ["5000mAh", "Single USB output", "Slim design"],
+    "availability": false,
+    "rating": 4.0
+  },
+  {
+    "product_id": "P017",
+    "product_title": "Portable Charger Q",
+    "product_image": "portable_charger_q.jpg",
+    "category": "power banks",
+    "price": 95,
+    "description": "Fast charger compatible with most devices.",
+    "specification": ["15000mAh", "Dual USB output", "Fast Charge"],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": "P018",
+    "product_title": "Smartwatch Explorer",
+    "product_image": "smartwatch_explorer.jpg",
+    "category": "smart watches",
+    "price": 320,
+    "description": "Adventure-ready smartwatch with GPS and altimeter.",
+    "specification": ["GPS", "Altimeter", "Water-resistant up to 50m"],
+    "availability": true,
+    "rating": 4.7
+  }
+]
