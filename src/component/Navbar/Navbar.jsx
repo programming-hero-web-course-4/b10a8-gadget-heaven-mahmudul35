@@ -17,10 +17,11 @@ const Navbar = () => {
             <li>
               {" "}
               <Link
-                t0="/"
-                className={
-                  location.pathname === "/" ? "underline btn btn-ghost" : ""
-                }
+                to="/"
+                // className={
+                //   location.pathname === "/" ? "underline btn btn-ghost" : ""
+                // }
+                className="btn btn-ghost"
               >
                 Home
               </Link>

@@ -1,6 +1,6 @@
 [
   {
-    "product_id": "P001",
+    "product_id": 1,
     "product_title": "Smartphone X",
     "product_image": "smartphone_x.jpg",
     "category": "phones",
@@ -11,7 +11,7 @@
     "rating": 4.5
   },
   {
-    "product_id": "P002",
+    "product_id": 2,
     "product_title": "Smartphone Y",
     "product_image": "smartphone_y.jpg",
     "category": "phones",
@@ -26,7 +26,7 @@
     "rating": 4.6
   },
   {
-    "product_id": "P003",
+    "product_id": 3,
     "product_title": "Smartphone Z",
     "product_image": "smartphone_z.jpg",
     "category": "phones",
@@ -37,7 +37,7 @@
     "rating": 4.2
   },
   {
-    "product_id": "P004",
+    "product_id": 4,
     "product_title": "Smartphone Lite",
     "product_image": "smartphone_lite.jpg",
     "category": "phones",
@@ -48,7 +48,7 @@
     "rating": 4.0
   },
   {
-    "product_id": "P005",
+    "product_id": 5,
     "product_title": "Smartphone Pro",
     "product_image": "smartphone_pro.jpg",
     "category": "phones",
@@ -59,7 +59,7 @@
     "rating": 4.8
   },
   {
-    "product_id": "P006",
+    "product_id": 6,
     "product_title": "Smartphone Ultra",
     "product_image": "smartphone_ultra.jpg",
     "category": "phones",
@@ -70,7 +70,7 @@
     "rating": 4.9
   },
   {
-    "product_id": "P007",
+    "product_id": 7,
     "product_title": "Smartphone Max",
     "product_image": "smartphone_max.jpg",
     "category": "phones",
@@ -81,7 +81,7 @@
     "rating": 4.4
   },
   {
-    "product_id": "P008",
+    "product_id": 8,
     "product_title": "Laptop Pro 15",
     "product_image": "laptop_pro_15.jpg",
     "category": "computers",
@@ -92,7 +92,7 @@
     "rating": 4.7
   },
   {
-    "product_id": "P009",
+    "product_id": 9,
     "product_title": "Gaming Laptop G",
     "product_image": "gaming_laptop_g.jpg",
     "category": "computers",
@@ -103,7 +103,7 @@
     "rating": 4.8
   },
   {
-    "product_id": "P010",
+    "product_id": 10,
     "product_title": "Laptop Air",
     "product_image": "laptop_air.jpg",
     "category": "computers",
@@ -114,7 +114,7 @@
     "rating": 4.5
   },
   {
-    "product_id": "P011",
+    "product_id": 11,
     "product_title": "Smartwatch S",
     "product_image": "smartwatch_s.jpg",
     "category": "smart watches",
@@ -125,7 +125,7 @@
     "rating": 4.3
   },
   {
-    "product_id": "P012",
+    "product_id": 12,
     "product_title": "Smartwatch Fit",
     "product_image": "smartwatch_fit.jpg",
     "category": "smart watches",
@@ -136,7 +136,7 @@
     "rating": 4.6
   },
   {
-    "product_id": "P013",
+    "product_id": 13,
     "product_title": "Smartwatch Active",
     "product_image": "smartwatch_active.jpg",
     "category": "smart watches",
@@ -147,7 +147,7 @@
     "rating": 4.2
   },
   {
-    "product_id": "P014",
+    "product_id": 14,
     "product_title": "Portable Power Bank P",
     "product_image": "power_bank_p.jpg",
     "category": "power banks",
@@ -158,7 +158,7 @@
     "rating": 4.3
   },
   {
-    "product_id": "P015",
+    "product_id": 15,
     "product_title": "Power Bank Max",
     "product_image": "power_bank_max.jpg",
     "category": "power banks",
@@ -169,7 +169,7 @@
     "rating": 4.5
   },
   {
-    "product_id": "P016",
+    "product_id": 16,
     "product_title": "Slim Power Bank S",
     "product_image": "slim_power_bank_s.jpg",
     "category": "power banks",
@@ -180,7 +180,7 @@
     "rating": 4.0
   },
   {
-    "product_id": "P017",
+    "product_id": 17,
     "product_title": "Portable Charger Q",
     "product_image": "portable_charger_q.jpg",
     "category": "power banks",
@@ -191,7 +191,7 @@
     "rating": 4.4
   },
   {
-    "product_id": "P018",
+    "product_id": 18,
     "product_title": "Smartwatch Explorer",
     "product_image": "smartwatch_explorer.jpg",
     "category": "smart watches",
