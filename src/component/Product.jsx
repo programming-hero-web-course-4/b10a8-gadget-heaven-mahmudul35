@@ -1,8 +1,16 @@
 import React from "react";
 
-const Product = ({ product }) => {
-  const { product_title, rating, product_image, category, price, description } =
-    product;
+const Product = ({ product, mobile }) => {
+  const {
+    product_title,
+    rating,
+    price: product_price,
+    product_image,
+    category,
+    price,
+    description,
+  } = product;
+
   return (
     <div>
       <div className="card bg-base-100 w-96 shadow-xl">
@@ -14,7 +22,7 @@ const Product = ({ product }) => {
         </figure>
         <div className="card-body">
           <h2 className="card-title">{product_title}</h2>
-          <p>{category}</p>
+          <p>{product_price}</p>
           <div className="card-actions justify-end">
             <button className="btn btn-primary">View Details</button>
           </div>
