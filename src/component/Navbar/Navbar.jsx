@@ -1,5 +1,6 @@
 import React from "react";
 import { CiHeart } from "react-icons/ci";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 justify-around items-center">
@@ -11,15 +12,21 @@ const Navbar = () => {
         <ul className="flex ">
           <li>
             {" "}
-            <a className="btn btn-ghost">Home</a>
+            <Link tp="/" className="btn btn-ghost">
+              Home
+            </Link>
           </li>
           <li>
             {" "}
-            <a className="btn btn-ghost">Statistics</a>
+            <Link to="/statistics" className="btn btn-ghost">
+              Statistics
+            </Link>
           </li>
           <li>
             {" "}
-            <a className="btn btn-ghost">Dashboard</a>
+            <Link to="/dashboard" className="btn btn-ghost">
+              Dashboard
+            </Link>
           </li>
         </ul>
       </div>

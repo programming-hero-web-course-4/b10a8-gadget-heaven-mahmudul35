@@ -9,6 +9,7 @@ const Layout = () => {
       <div className="min-h-[calc(100vh-244px)]">
         <Outlet />
       </div>
+
       <Footer />
     </div>
   );
