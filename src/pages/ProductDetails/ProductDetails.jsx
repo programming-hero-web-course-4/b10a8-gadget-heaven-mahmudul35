@@ -4,14 +4,14 @@ import { IoCartOutline } from "react-icons/io5";
 import Rating from "react-rating";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import DashboardBanner from "../../component/DashboardBanner/DashboardBanner";
-import { addProduct } from "../../utility";
+import { addProduct, addWishlist } from "../../utility";
 const ProductDetails = () => {
   const { productId } = useParams();
   const id = parseInt(productId);
-  console.log(id);
+
   const data = useLoaderData();
   const product = data.find((product) => product.product_id === id);
-  console.log(product);
+
   const {
     product_title,
     product_image,
@@ -23,6 +23,10 @@ const ProductDetails = () => {
 
   const addToCart = (product) => {
     addProduct(product);
+  };
+
+  const addToWishList = (product) => {
+    addWishlist(product);
   };
 
   return (
@@ -62,7 +66,10 @@ const ProductDetails = () => {
                 </span>
               </button>
             </Link>
-            <div className="border-2 border-slate-300 rounded-full ">
+            <div
+              className="border-2 border-slate-300 rounded-full "
+              onClick={() => addToWishList(product)}
+            >
               <Link>
                 <CiHeart className="text-5xl" />
               </Link>
