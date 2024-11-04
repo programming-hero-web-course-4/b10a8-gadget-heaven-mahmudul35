@@ -1,6 +1,6 @@
 import React from "react";
 import { CiHeart } from "react-icons/ci";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const location = useLocation();
@@ -16,7 +16,7 @@ const Navbar = () => {
           <ul className="flex ">
             <li>
               {" "}
-              <Link
+              <NavLink
                 to="/"
                 // className={
                 //   location.pathname === "/" ? "underline btn btn-ghost" : ""
@@ -24,19 +24,19 @@ const Navbar = () => {
                 className="btn btn-ghost"
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
               {" "}
-              <Link to="/statistics" className="btn btn-ghost">
+              <NavLink to="/statistics" className="btn btn-ghost">
                 Statistics
-              </Link>
+              </NavLink>
             </li>
             <li>
               {" "}
-              <Link to="/dashboard" className="btn btn-ghost">
+              <NavLink to="/dashboard" className="btn btn-ghost">
                 Dashboard
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

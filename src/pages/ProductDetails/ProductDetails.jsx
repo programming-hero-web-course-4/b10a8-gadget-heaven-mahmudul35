@@ -4,6 +4,7 @@ import { IoCartOutline } from "react-icons/io5";
 import Rating from "react-rating";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import DashboardBanner from "../../component/DashboardBanner/DashboardBanner";
+import { addProduct } from "../../utility";
 const ProductDetails = () => {
   const { productId } = useParams();
   const id = parseInt(productId);
@@ -19,6 +20,11 @@ const ProductDetails = () => {
     specification,
     rating,
   } = product;
+
+  const addToCart = (product) => {
+    addProduct(product);
+  };
+
   return (
     <div className="relative">
       <DashboardBanner />
@@ -48,7 +54,7 @@ const ProductDetails = () => {
             <p className="bg-slate-50 p-2 rounded-3xl">{rating}</p>
           </div>
           <div className="flex items-center gap-6 mt-4">
-            <Link>
+            <Link onClick={() => addToCart(product)}>
               <button className="flex items-center gap-3 bg-[#9538E2] px-5 py-3 rounded-full text-white font-bold">
                 Add To Cart{" "}
                 <span>
