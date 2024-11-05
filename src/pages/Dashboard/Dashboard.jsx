@@ -8,6 +8,8 @@ const Dashboard = () => {
     document.title = "Dashboard";
   }, []);
   const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const [cart, setCart] = useState([]);
   const [wishlist, setWishlist] = useState([]);
   const [toggle, setToggle] = useState(false);
@@ -40,6 +42,9 @@ const Dashboard = () => {
       setToggle(true);
     }
   };
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   const totalPrices = () => {
     const total = cart.reduce((acc, item) => acc + item.price, 0);
     setTotalPrice(total);
@@ -56,8 +61,12 @@ const Dashboard = () => {
   const handlePurchase = () => {
     localStorage.removeItem("cart");
     setCart([]);
+    openModal();
+    // navigate("/");
+  };
 
-    alert("Purchase Successful");
+  const handleHome = () => {
+    closeModal();
     navigate("/");
   };
 
@@ -79,16 +88,21 @@ const Dashboard = () => {
         ) : (
           <div>
             <div className="flex justify-between items-center container mx-auto">
-              <h1 className="text-3xl font-bold mb-7">Cart</h1>
+              <h1 className="text-3xl font-bold ">Cart</h1>
               <div className="flex items-center gap-10">
-                <h1>Total Price :${totalPrice}</h1>
+                <h1 className="text-2xl font-bold">
+                  Total Price :${totalPrice}
+                </h1>
                 <div>
-                  <button onClick={handleSortByPrice} className="btn btn-ghost">
-                    Sort By
+                  <button
+                    onClick={handleSortByPrice}
+                    className="btn btn-outline w-32 rounded-full text-[#9538E2] font-bold"
+                  >
+                    Sort By Price
                   </button>
                   <button
                     onClick={handlePurchase}
-                    className="btn btn-secondary"
+                    className="btn btn-secondary w-32 rounded-full ml-3 font-bold"
                   >
                     Purchase
                   </button>
@@ -105,6 +119,26 @@ const Dashboard = () => {
           </div>
         )}
       </div>
+
+      {isModalOpen && (
+        <dialog
+          id="my_modal_5"
+          className="modal modal-bottom sm:modal-middle"
+          open={isModalOpen}
+        >
+          <div className="modal-box">
+            <h3 className="font-bold text-lg">Congrates!!</h3>
+            <p className="py-4">{totalPrice}</p>
+            <div className="modal-action">
+              <form method="dialog">
+                <button className="btn" onClick={handleHome}>
+                  Close
+                </button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+      )}
     </div>
   );
 };

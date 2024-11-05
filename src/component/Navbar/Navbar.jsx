@@ -3,6 +3,8 @@ import { CiHeart } from "react-icons/ci";
 import { NavLink, useLocation } from "react-router-dom";
 import { getProduct, getWishlist } from "../../utility";
 const Navbar = () => {
+  const { pathname } = useLocation();
+  console.log(pathname);
   const [cartItemLength, setCartItemLength] = useState(0);
 
   useEffect(() => {
@@ -21,7 +23,7 @@ const Navbar = () => {
         </div>
 
         <div>
-          <ul className="flex ">
+          <ul className="flex gap-8">
             <li>
               {" "}
               <NavLink
@@ -29,20 +31,44 @@ const Navbar = () => {
                 // className={
                 //   location.pathname === "/" ? "underline btn btn-ghost" : ""
                 // }
-                className="btn btn-ghost"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#007BFF]  underline "
+                    : ""
+                }
               >
                 Home
               </NavLink>
             </li>
             <li>
               {" "}
-              <NavLink to="/statistics" className="btn btn-ghost">
+              <NavLink
+                to="/statistics"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#007BFF]  underline"
+                    : ""
+                }
+              >
                 Statistics
               </NavLink>
             </li>
             <li>
               {" "}
-              <NavLink to="/dashboard" className="btn btn-ghost">
+              <NavLink
+                to="/dashboard"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#007BFF]  underline"
+                    : ""
+                }
+              >
                 Dashboard
               </NavLink>
             </li>

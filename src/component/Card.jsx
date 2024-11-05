@@ -12,7 +12,7 @@ const Card = ({ product, handleDelete }) => {
   } = product;
 
   return (
-    <div className="flex justify-between items-center bg-slate-100 p-5 rounded-xl m-3 w-[800px] mx-auto">
+    <div className="flex justify-between items-center bg-slate-100 p-5 rounded-xl m-3 w-[1000px] mx-auto mt-5">
       <div className="flex items-center gap-8">
         <div>
           <img

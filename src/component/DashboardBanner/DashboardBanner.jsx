@@ -4,7 +4,7 @@ const DashboardBanner = ({ handleToggle, toggle }) => {
   const { pathname } = useLocation();
 
   return (
-    <div className=" mx-9  relative  mb-20">
+    <div className=" mx-9  relative  mb-16">
       <div className="flex flex-col items-center text-center space-y-6 bg-[#9538E2] h-[350px] rounded-2xl">
         <h1 className="text-5xl font-bold text-white w-[1100px] mt-14">
           Product Details
@@ -17,11 +17,14 @@ const DashboardBanner = ({ handleToggle, toggle }) => {
           <div className="flex gap-8">
             <button
               onClick={() => handleToggle("cart")}
-              className="btn btn-outline"
+              className="btn  w-32 rounded-full bg-white text-[#9538E2] font-bold"
             >
               Cart
             </button>
-            <button onClick={handleToggle} className="btn btn-accent">
+            <button
+              onClick={handleToggle}
+              className="btn btn-secondary w-32 rounded-full"
+            >
               WishList
             </button>
           </div>

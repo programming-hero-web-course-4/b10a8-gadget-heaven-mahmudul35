@@ -47,9 +47,9 @@ const ProductDetails = () => {
   return (
     <div className="relative">
       <DashboardBanner />
-      <div className="flex gap-4 h-[500px] w-[700px] mx-auto bg-white shadow-xl absolute left-0 right-0  top-52 p-4 rounded-xl">
-        <div className="w-2/4 h-full">
-          <img src={product_image} alt="" className="h-full" />
+      <div className="flex gap-4 items-center h-[500px] w-[700px] mx-auto bg-white shadow-xl absolute left-0 right-0  top-52 p-4 rounded-xl">
+        <div className="w-2/4 ">
+          <img src={product_image} alt="" className="" />
         </div>
         <div>
           <h2 className="text-[28px] font-semibold">{product_title}</h2>
