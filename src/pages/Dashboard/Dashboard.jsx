@@ -23,17 +23,27 @@ const Dashboard = () => {
     const wishlist = getWishlist();
     setWishlist(wishlist);
   }, []);
-  const handleDelete = (id) => {
-    deleteProduct(id);
-    const cart = getProduct();
-    setCart(cart);
-  };
-
-  const wishListDelete = (id) => {
-    deleteWishlist(id);
+  useEffect(() => {
     const wishlist = getWishlist();
     setWishlist(wishlist);
+  }, []);
+  const handleDelete = (id) => {
+    if (toggle) {
+      deleteProduct(id);
+      const cart = getProduct();
+      setCart(cart);
+    } else {
+      deleteProduct(id);
+      const wishlist = getWishlist();
+      setWishlist(wishlist);
+    }
   };
+
+  // const wishListDelete = (id) => {
+  //   deleteWishlist(id);
+  //   const wishlist = getWishlist();
+  //   setWishlist(wishlist);
+  // };
 
   const handleToggle = (name) => {
     if (name === "cart") {
