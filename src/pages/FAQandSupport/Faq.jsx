@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const FAQ = [
   {
@@ -64,6 +64,9 @@ const FAQ = [
 ];
 
 const Faq = () => {
+  useEffect(() => {
+    document.title = "FAQ and Support";
+  }, []);
   return (
     <div className="container mx-auto mt-24">
       {FAQ.map((faq) => (

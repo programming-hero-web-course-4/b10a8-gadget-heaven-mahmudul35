@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 //get product
 const getProduct = () => {
   const cartList = localStorage.getItem("cart");
@@ -15,10 +16,11 @@ const addProduct = (product) => {
     (item) => item.product_id === product.product_id
   );
   if (isExist) {
-    alert("Product already added to cart");
+    toast.error("Product already added to Cart");
   } else {
     cartList.push(product);
     localStorage.setItem("cart", JSON.stringify(cartList));
+    toast.success("Product added to Cart");
   }
   //   console.log(product);
 };
@@ -28,6 +30,7 @@ const deleteProduct = (id) => {
   const cartList = getProduct();
   const updatedCart = cartList.filter((item) => item.product_id !== id);
   localStorage.setItem("cart", JSON.stringify(updatedCart));
+  toast.error("Product removed from Cart");
 };
 
 const getWishlist = () => {
@@ -45,10 +48,11 @@ const addWishlist = (product) => {
     (item) => item.product_id === product.product_id
   );
   if (isExist) {
-    // alert("Product already added to wishlist");
+    toast.error("Product already added to wishlist");
   } else {
     wishlist.push(product);
     localStorage.setItem("wishlist", JSON.stringify(wishlist));
+    toast.success("Product added to wishlist");
   }
 };
 
@@ -56,6 +60,7 @@ const deleteWishlist = (id) => {
   const wishlist = getWishlist();
   const updatedWishlist = wishlist.filter((item) => item.product_id !== id);
   localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
+  toast.error("Product removed from wishlist");
 };
 
 export {
