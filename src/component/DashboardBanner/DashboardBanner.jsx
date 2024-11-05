@@ -14,8 +14,11 @@ const DashboardBanner = ({ handleToggle, toggle }) => {
           level. From smart devices to the coolest accessories, we have it all!
         </p>
         {pathname === "/dashboard" && (
-          <div>
-            <button onClick={handleToggle} className="btn btn-outline">
+          <div className="flex gap-8">
+            <button
+              onClick={() => handleToggle("cart")}
+              className="btn btn-outline"
+            >
               Cart
             </button>
             <button onClick={handleToggle} className="btn btn-accent">

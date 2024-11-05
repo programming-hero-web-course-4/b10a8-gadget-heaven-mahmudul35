@@ -32,8 +32,12 @@ const Dashboard = () => {
     setWishlist(wishlist);
   };
 
-  const handleToggle = () => {
-    setToggle(!toggle);
+  const handleToggle = (name) => {
+    if (name === "cart") {
+      setToggle(false);
+    } else {
+      setToggle(true);
+    }
   };
 
   const handleSortByPrice = () => {
@@ -49,16 +53,6 @@ const Dashboard = () => {
       <DashboardBanner handleToggle={handleToggle} toggle={toggle} />
       <div className="">
         {toggle ? (
-          // <div>
-          //   <h1 className="text-center text-3xl font-bold mb-7">Cart</h1>
-          //   {cart.map((product) => (
-          //     <Card
-          //       key={product.product_id}
-          //       product={product}
-          //       handleDelete={handleDelete}
-          //     />
-          //   ))}
-          // </div>
           <div>
             <h1 className="text-center text-3xl font-bold mb-7">Wishlist</h1>
             {wishlist.map((product) => (
