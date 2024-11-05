@@ -72,6 +72,21 @@ const Navbar = () => {
                 Dashboard
               </NavLink>
             </li>
+            <li>
+              {" "}
+              <NavLink
+                to="/faq"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#007BFF]  underline"
+                    : ""
+                }
+              >
+                FAQ and Support
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className="flex-none">
