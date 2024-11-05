@@ -15,7 +15,11 @@ const Card = ({ product, handleDelete }) => {
     <div className="flex justify-between items-center bg-slate-100 p-5 rounded-xl m-3 w-[800px] mx-auto">
       <div className="flex items-center gap-8">
         <div>
-          <p>img</p>
+          <img
+            src={product_image}
+            alt=""
+            className="h-[100px] w-[150px] rounded-lg"
+          />
         </div>
         <div>
           <h1 className="text-2xl font-semibold">{product_title}</h1>

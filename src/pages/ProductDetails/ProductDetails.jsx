@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import Rating from "react-rating";
@@ -6,6 +6,10 @@ import { Link, useLoaderData, useParams } from "react-router-dom";
 import DashboardBanner from "../../component/DashboardBanner/DashboardBanner";
 import { addProduct, addWishlist } from "../../utility";
 const ProductDetails = () => {
+  useEffect(() => {
+    document.title = "Product Details";
+  }, []);
+
   const { productId } = useParams();
   const id = parseInt(productId);
 
@@ -32,9 +36,9 @@ const ProductDetails = () => {
   return (
     <div className="relative">
       <DashboardBanner />
-      <div className="flex h-[500px] w-[700px] mx-auto bg-white shadow-xl absolute left-0 right-0  top-52 p-4 rounded-xl">
-        <div className="w-2/4">
-          <p>img</p>
+      <div className="flex gap-4 h-[500px] w-[700px] mx-auto bg-white shadow-xl absolute left-0 right-0  top-52 p-4 rounded-xl">
+        <div className="w-2/4 h-full">
+          <img src={product_image} alt="" className="h-full" />
         </div>
         <div>
           <h2 className="text-[28px] font-semibold">{product_title}</h2>

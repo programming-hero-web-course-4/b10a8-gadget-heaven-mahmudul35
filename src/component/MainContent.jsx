@@ -53,6 +53,12 @@ const MainContent = () => {
           </button>
           <button
             className="bg-white p-3 rounded-lg hover:bg-purple-800 hover:text-white"
+            onClick={() => handleCategoryClick("power banks")}
+          >
+            Power Banks
+          </button>
+          <button
+            className="bg-white p-3 rounded-lg hover:bg-purple-800 hover:text-white"
             onClick={() => handleCategoryClick("accessories")}
           >
             Accessories

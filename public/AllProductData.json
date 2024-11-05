@@ -2,7 +2,7 @@
   {
     "product_id": 1,
     "product_title": "Smartphone X",
-    "product_image": "smartphone_x.jpg",
+    "product_image": "https://i.ibb.co.com/Qc2SzZL/Apple-i-Phone-X-Space-Gray.webp",
     "category": "phones",
     "price": 650,
     "description": "High-performance smartphone with stunning display.",
@@ -13,7 +13,7 @@
   {
     "product_id": 2,
     "product_title": "Smartphone Y",
-    "product_image": "smartphone_y.jpg",
+    "product_image": "https://i.ibb.co.com/BzCRG9S/s-l300.jpg",
     "category": "phones",
     "price": 720,
     "description": "Powerful smartphone with excellent battery life.",
@@ -28,7 +28,7 @@
   {
     "product_id": 3,
     "product_title": "Smartphone Z",
-    "product_image": "smartphone_z.jpg",
+    "product_image": "https://i.ibb.co.com/QKhxC0g/20231115121434-HONOR-X8a-Titanium-Silver.jpg",
     "category": "phones",
     "price": 560,
     "description": "Affordable smartphone with all essential features.",
@@ -39,7 +39,7 @@
   {
     "product_id": 4,
     "product_title": "Smartphone Lite",
-    "product_image": "smartphone_lite.jpg",
+    "product_image": "https://i.ibb.co.com/jWcbH7f/0dc193ac-5b04-4520-84db-3bc83b0c84c2.jpg",
     "category": "phones",
     "price": 500,
     "description": "Budget-friendly phone with impressive performance.",
@@ -50,7 +50,7 @@
   {
     "product_id": 5,
     "product_title": "Smartphone Pro",
-    "product_image": "smartphone_pro.jpg",
+    "product_image": "https://i.ibb.co.com/R7T5KZc/X80-5G.jpg",
     "category": "phones",
     "price": 900,
     "description": "Advanced smartphone with pro-grade features.",
@@ -61,7 +61,7 @@
   {
     "product_id": 6,
     "product_title": "Smartphone Ultra",
-    "product_image": "smartphone_ultra.jpg",
+    "product_image": "https://i.ibb.co.com/Wkhpn7X/Samsung-Galaxy-S24-Plus-Cobalt-Violet.webp",
     "category": "phones",
     "price": 1100,
     "description": "Flagship smartphone with exceptional capabilities.",
@@ -72,7 +72,7 @@
   {
     "product_id": 7,
     "product_title": "Smartphone Max",
-    "product_image": "smartphone_max.jpg",
+    "product_image": "https://i.ibb.co.com/BBmKXTs/Galaxy-M35-Card-Image.webp",
     "category": "phones",
     "price": 750,
     "description": "Large-screen smartphone with all-day battery.",
@@ -83,7 +83,7 @@
   {
     "product_id": 8,
     "product_title": "Laptop Pro 15",
-    "product_image": "laptop_pro_15.jpg",
+    "product_image": "https://i.ibb.co.com/7R1gXgz/Xiaomi-Redmibook-15-Pro-Ryzen-Edition-featured-image-packshot-review.jpg",
     "category": "computers",
     "price": 1200,
     "description": "Professional-grade laptop with powerful processing.",
@@ -94,7 +94,7 @@
   {
     "product_id": 9,
     "product_title": "Gaming Laptop G",
-    "product_image": "gaming_laptop_g.jpg",
+    "product_image": "https://i.ibb.co.com/ZMmdnPc/notebook-g16-7630-black-800x550.jpg",
     "category": "computers",
     "price": 1500,
     "description": "High-performance laptop optimized for gaming.",
@@ -105,7 +105,7 @@
   {
     "product_id": 10,
     "product_title": "Laptop Air",
-    "product_image": "laptop_air.jpg",
+    "product_image": "https://i.ibb.co.com/SQFGRzr/apple-macbook-air-m3-2024-14.webp",
     "category": "computers",
     "price": 1000,
     "description": "Lightweight and portable laptop for daily use.",
@@ -116,7 +116,7 @@
   {
     "product_id": 11,
     "product_title": "Smartwatch S",
-    "product_image": "smartwatch_s.jpg",
+    "product_image": "https://i.ibb.co.com/nn49spr/realme-watch-s-photo-1.png",
     "category": "smart watches",
     "price": 250,
     "description": "Stylish smartwatch with health tracking features.",
@@ -127,7 +127,7 @@
   {
     "product_id": 12,
     "product_title": "Smartwatch Fit",
-    "product_image": "smartwatch_fit.jpg",
+    "product_image": "https://i.ibb.co.com/qd0Bkyv/aff641b3ec3928524be5620299d87091-jpg-960x960q80-jpg.webp",
     "category": "smart watches",
     "price": 300,
     "description": "Fitness-oriented smartwatch with long battery life.",
@@ -138,7 +138,7 @@
   {
     "product_id": 13,
     "product_title": "Smartwatch Active",
-    "product_image": "smartwatch_active.jpg",
+    "product_image": "https://i.ibb.co.com/55s4GN6/Amazfit-Bip-S-Fitness-Smart-Watch-40-Day-Battery-Life-10-Sports-Modes-Heart-Rate-1-28-Display-691c00.jpg",
     "category": "smart watches",
     "price": 280,
     "description": "Sports-focused smartwatch with various modes.",
@@ -149,7 +149,7 @@
   {
     "product_id": 14,
     "product_title": "Portable Power Bank P",
-    "product_image": "power_bank_p.jpg",
+    "product_image": "https://i.ibb.co.com/zHMr83m/Fast-Charging-10000m-Ah-Power-Banks-Charger-Built-in-Micro-USB-Type-C-Lighting-USB-4-in-1-Cable-Port.webp",
     "category": "power banks",
     "price": 65,
     "description": "Compact power bank for charging on the go.",
@@ -160,7 +160,7 @@
   {
     "product_id": 15,
     "product_title": "Power Bank Max",
-    "product_image": "power_bank_max.jpg",
+    "product_image": "https://i.ibb.co.com/m5XrLXb/Xop-Nmwu-LB0h-DIizzy-LDl6oz9w-MUMz4k-Ya-Vc-Qk-IHL.webp",
     "category": "power banks",
     "price": 85,
     "description": "High-capacity power bank for extended charging.",
@@ -171,7 +171,7 @@
   {
     "product_id": 16,
     "product_title": "Slim Power Bank S",
-    "product_image": "slim_power_bank_s.jpg",
+    "product_image": "https://i.ibb.co.com/2MfBLMW/s-l1200.jpg",
     "category": "power banks",
     "price": 55,
     "description": "Ultra-slim power bank for portability.",
@@ -182,7 +182,7 @@
   {
     "product_id": 17,
     "product_title": "Portable Charger Q",
-    "product_image": "https://ibb.co.com/WVpSZdB",
+    "product_image": "https://i.ibb.co.com/8Y4FqRP/portable-charger.jpg",
     "category": "power banks",
     "price": 95,
     "description": "Fast charger compatible with most devices.",
@@ -193,7 +193,7 @@
   {
     "product_id": 18,
     "product_title": "Smartwatch Explorer",
-    "product_image": "smartwatch_explorer.jpg",
+    "product_image": "https://i.ibb.co.com/kqk8TZc/9dee3b89-7e3d-4594-9f0f-912af5d464be-CR0-0-600-450-PT0-SX600-V1.png",
     "category": "smart watches",
     "price": 320,
     "description": "Adventure-ready smartwatch with GPS and altimeter.",

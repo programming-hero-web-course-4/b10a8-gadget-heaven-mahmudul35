@@ -8,7 +8,7 @@ const Navbar = () => {
   useEffect(() => {
     const cart = getProduct();
     setCartItemLength(cart.length);
-  }, [cartItemLength]);
+  }, []);
   const wishlistItemLength = getWishlist().length;
   console.log(cartItemLength);
   const location = useLocation();
