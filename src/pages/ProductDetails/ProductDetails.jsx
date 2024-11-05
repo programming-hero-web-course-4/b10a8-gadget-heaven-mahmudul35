@@ -1,17 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import Rating from "react-rating";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import DashboardBanner from "../../component/DashboardBanner/DashboardBanner";
-import { addProduct, addWishlist } from "../../utility";
+import { addProduct, addWishlist, getWishlist } from "../../utility";
 const ProductDetails = () => {
   useEffect(() => {
     document.title = "Product Details";
   }, []);
 
+  const [disabled, setDisabled] = useState(false);
+
   const { productId } = useParams();
   const id = parseInt(productId);
+  useEffect(() => {
+    const wishlist = getWishlist();
+    const exist = wishlist.find((item) => item.product_id === id);
+    if (exist) {
+      setDisabled(true);
+    }
+  }, [id]);
 
   const data = useLoaderData();
   const product = data.find((product) => product.product_id === id);
@@ -31,6 +40,8 @@ const ProductDetails = () => {
 
   const addToWishList = (product) => {
     addWishlist(product);
+    setDisabled(true);
+    console.log(exist);
   };
 
   return (
@@ -70,13 +81,14 @@ const ProductDetails = () => {
                 </span>
               </button>
             </Link>
-            <div
-              className="border-2 border-slate-300 rounded-full "
-              onClick={() => addToWishList(product)}
-            >
-              <Link>
-                <CiHeart className="text-5xl" />
-              </Link>
+            <div className="  " onClick={() => addToWishList(product)}>
+              <button disabled={disabled}>
+                <CiHeart
+                  className={`${
+                    disabled ? "bg-black" : ""
+                  } text-5xl bg-orange-500 border-slate-300 rounded-full  p-2`}
+                />
+              </button>
             </div>
           </div>
         </div>

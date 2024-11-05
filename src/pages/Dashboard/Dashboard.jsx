@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Card from "../../component/Card";
 import DashboardBanner from "../../component/DashboardBanner/DashboardBanner";
 import { deleteProduct, getProduct, getWishlist } from "../../utility";
@@ -6,7 +7,7 @@ const Dashboard = () => {
   useEffect(() => {
     document.title = "Dashboard";
   }, []);
-
+  const navigate = useNavigate();
   const [cart, setCart] = useState([]);
   const [wishlist, setWishlist] = useState([]);
   const [toggle, setToggle] = useState(false);
@@ -39,15 +40,27 @@ const Dashboard = () => {
       setToggle(true);
     }
   };
-
+  const totalPrices = () => {
+    const total = cart.reduce((acc, item) => acc + item.price, 0);
+    setTotalPrice(total);
+  };
   const handleSortByPrice = () => {
     const sortedCart = [...cart].sort((a, b) => b.price - a.price);
     setCart(sortedCart);
   };
 
-  const handleTotalPrice = () => {
+  useEffect(() => {
+    totalPrices();
+  }, [cart]);
+
+  const handlePurchase = () => {
+    localStorage.removeItem("cart");
+    setCart([]);
+
     alert("Purchase Successful");
+    navigate("/");
   };
+
   return (
     <div>
       <DashboardBanner handleToggle={handleToggle} toggle={toggle} />
@@ -68,13 +81,13 @@ const Dashboard = () => {
             <div className="flex justify-between items-center container mx-auto">
               <h1 className="text-3xl font-bold mb-7">Cart</h1>
               <div className="flex items-center gap-10">
-                <h1>Total Price : {totalPrice}</h1>
+                <h1>Total Price :${totalPrice}</h1>
                 <div>
                   <button onClick={handleSortByPrice} className="btn btn-ghost">
                     Sort By
                   </button>
                   <button
-                    onClick={handleTotalPrice}
+                    onClick={handlePurchase}
                     className="btn btn-secondary"
                   >
                     Purchase

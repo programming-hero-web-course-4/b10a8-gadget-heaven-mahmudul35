@@ -45,7 +45,7 @@ const addWishlist = (product) => {
     (item) => item.product_id === product.product_id
   );
   if (isExist) {
-    alert("Product already added to wishlist");
+    // alert("Product already added to wishlist");
   } else {
     wishlist.push(product);
     localStorage.setItem("wishlist", JSON.stringify(wishlist));
@@ -60,9 +60,9 @@ const deleteWishlist = (id) => {
 
 export {
   addProduct,
-  getProduct,
-  deleteProduct,
   addWishlist,
-  getWishlist,
+  deleteProduct,
   deleteWishlist,
+  getProduct,
+  getWishlist,
 };
