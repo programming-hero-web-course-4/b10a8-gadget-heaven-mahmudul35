@@ -24,7 +24,7 @@ const Product = ({ product, mobile }) => {
         </figure>
         <div className="card-body">
           <h2 className="card-title">{product_title}</h2>
-          <p>{product_price}</p>
+          <p>$ {product_price}</p>
           <div className="card-actions ">
             <Link to={`/product/${product_id}`}>
               <button className="border-2 border-[#9538E2] text-[#9538E2] px-4 py-2 rounded-full">
