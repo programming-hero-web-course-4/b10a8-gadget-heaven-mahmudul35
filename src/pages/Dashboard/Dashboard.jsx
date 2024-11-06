@@ -3,7 +3,12 @@ import { useNavigate } from "react-router-dom";
 import Group from "../../assets/Group.png";
 import Card from "../../component/Card";
 import DashboardBanner from "../../component/DashboardBanner/DashboardBanner";
-import { deleteProduct, getProduct, getWishlist } from "../../utility";
+import {
+  deleteProduct,
+  deleteWishlist,
+  getProduct,
+  getWishlist,
+} from "../../utility";
 const Dashboard = () => {
   useEffect(() => {
     document.title = "Dashboard";
@@ -15,6 +20,7 @@ const Dashboard = () => {
   const [wishlist, setWishlist] = useState([]);
   const [toggle, setToggle] = useState(false);
   const [totalPrice, setTotalPrice] = useState(0);
+  const [finalPrice, setFinalPrice] = useState(0);
   useEffect(() => {
     const cart = getProduct();
     setCart(cart);
@@ -34,11 +40,11 @@ const Dashboard = () => {
     setCart(cart);
   };
 
-  // const wishListDelete = (id) => {
-  //   deleteWishlist(id);
-  //   const wishlist = getWishlist();
-  //   setWishlist(wishlist);
-  // };
+  const handleWishListDelete = (id) => {
+    deleteWishlist(id);
+    const wishlist = getWishlist();
+    setWishlist(wishlist);
+  };
 
   const handleToggle = (name) => {
     if (name === "cart") {
@@ -64,7 +70,7 @@ const Dashboard = () => {
   }, [cart, isModalOpen]);
 
   const handlePurchase = () => {
-    totalPrices();
+    setFinalPrice(totalPrice);
     openModal();
     localStorage.removeItem("cart");
     setCart([]);
@@ -88,7 +94,7 @@ const Dashboard = () => {
               <Card
                 key={product.product_id}
                 product={product}
-                handleDelete={handleDelete}
+                handleDelete={handleWishListDelete}
               />
             ))}
           </div>
@@ -141,7 +147,7 @@ const Dashboard = () => {
               Payment Successfull!
             </h3>
             <p className="text-center">Thanks for purchaseing</p>
-            <p className="py-4 text-center">Total: ${totalPrice}</p>
+            <p className="py-4 text-center">Total: ${finalPrice}</p>
             <div className="modal-action">
               <form method="dialog " className="w-full">
                 <button className="btn w-full" onClick={handleHome}>
