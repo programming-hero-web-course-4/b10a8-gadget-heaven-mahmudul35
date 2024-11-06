@@ -85,8 +85,8 @@ const ProductDetails = () => {
               <button disabled={disabled}>
                 <CiHeart
                   className={`${
-                    disabled ? "bg-black" : ""
-                  } text-5xl bg-orange-500 border-slate-300 rounded-full  p-2`}
+                    disabled ? "bg-gray-300" : "bg-orange-500 hover:scale-105"
+                  } text-5xl  border-slate-300 rounded-full  p-2`}
                 />
               </button>
             </div>

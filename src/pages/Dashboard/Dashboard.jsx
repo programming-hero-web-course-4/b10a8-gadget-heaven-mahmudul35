@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Group from "../../assets/Group.png";
 import Card from "../../component/Card";
 import DashboardBanner from "../../component/DashboardBanner/DashboardBanner";
 import { deleteProduct, getProduct, getWishlist } from "../../utility";
@@ -60,7 +61,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     totalPrices();
-  }, [cart]);
+  }, [cart, isModalOpen]);
 
   const handlePurchase = () => {
     totalPrices();
@@ -132,12 +133,17 @@ const Dashboard = () => {
           className="modal modal-bottom sm:modal-middle"
           open={isModalOpen}
         >
+          {JSON.stringify(totalPrice)}
           <div className="modal-box">
-            <h3 className="font-bold text-lg">Congratulations!</h3>
-            <p className="py-4">Total Purchase Amount: ${totalPrice}</p>
+            <img src={Group} alt="" className="mx-auto" />
+            <h3 className="font-bold text-lg text-center">
+              Payment Successfull!
+            </h3>
+            <p className="text-center">Thanks for purchaseing</p>
+            <p className="py-4 text-center">Total: ${totalPrice}</p>
             <div className="modal-action">
-              <form method="dialog">
-                <button className="btn" onClick={handleHome}>
+              <form method="dialog " className="w-full">
+                <button className="btn w-full" onClick={handleHome}>
                   Close
                 </button>
               </form>
