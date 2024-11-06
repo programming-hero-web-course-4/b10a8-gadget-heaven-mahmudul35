@@ -29,7 +29,7 @@ const Card = ({ product, handleDelete }) => {
       </div>
       <p>
         <button onClick={() => handleDelete(product_id)}>
-          <MdDelete className="text-3xl" />
+          <MdDelete className="text-3xl text-red-700" />
         </button>
       </p>
     </div>

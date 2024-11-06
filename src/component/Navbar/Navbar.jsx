@@ -10,27 +10,37 @@ const Navbar = () => {
   useEffect(() => {
     const cart = getProduct();
     setCartItemLength(cart.length);
-  }, []);
+  }, [cartItemLength]);
   const wishlistItemLength = getWishlist().length;
   console.log(cartItemLength);
-  const location = useLocation();
-  const homepage = location.pathname === "/";
+
   return (
-    <div className={`${homepage ? "bg-black " : ""}`}>
-      <div className="navbar bg-base-100 justify-around items-center">
+    <div className=" ml-9 mr-9">
+      <div
+        className={`navbar  justify-around items-center ${
+          pathname === "/" ? "bg-[#9538E2] mt-3 rounded-t-2xl " : "bg-slate-100"
+        }`}
+      >
         <div>
-          <a className="btn btn-ghost text-xl">Gadget Heaven</a>
+          <a
+            className={`btn btn-ghost text-xl ${
+              pathname === "/" ? "text-white font-bold" : ""
+            }`}
+          >
+            Gadget Heaven
+          </a>
         </div>
 
         <div>
-          <ul className="flex gap-8">
+          <ul
+            className={`flex gap-8 ${
+              pathname === "/" ? "text-white font-bold" : ""
+            }`}
+          >
             <li>
               {" "}
               <NavLink
                 to="/"
-                // className={
-                //   location.pathname === "/" ? "underline btn btn-ghost" : ""
-                // }
                 className={({ isActive, isPending }) =>
                   isPending
                     ? "pending"
@@ -96,7 +106,7 @@ const Navbar = () => {
               role="button"
               className="btn btn-ghost btn-circle"
             >
-              <div className="indicator">
+              <div className="indicator bg-white rounded-full p-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -118,9 +128,9 @@ const Navbar = () => {
             </div>
           </div>
           <div>
-            <p className="relative">
+            <p className="relative bg-white rounded-full p-2 ">
               <CiHeart className="text-2xl" />
-              <span className="absolute -top-4 -right-0  rounded-full  ">
+              <span className="absolute -top-3 -right-0  rounded-full bg-slate-100 h-5 w-5">
                 {wishlistItemLength}
               </span>
             </p>

@@ -28,15 +28,9 @@ const Dashboard = () => {
     setWishlist(wishlist);
   }, []);
   const handleDelete = (id) => {
-    if (toggle) {
-      deleteProduct(id);
-      const cart = getProduct();
-      setCart(cart);
-    } else {
-      deleteProduct(id);
-      const wishlist = getWishlist();
-      setWishlist(wishlist);
-    }
+    deleteProduct(id);
+    const cart = getProduct();
+    setCart(cart);
   };
 
   // const wishListDelete = (id) => {
@@ -69,9 +63,11 @@ const Dashboard = () => {
   }, [cart]);
 
   const handlePurchase = () => {
+    totalPrices();
+    openModal();
     localStorage.removeItem("cart");
     setCart([]);
-    openModal();
+
     // navigate("/");
   };
 
@@ -137,8 +133,8 @@ const Dashboard = () => {
           open={isModalOpen}
         >
           <div className="modal-box">
-            <h3 className="font-bold text-lg">Congrates!!</h3>
-            <p className="py-4">{totalPrice}</p>
+            <h3 className="font-bold text-lg">Congratulations!</h3>
+            <p className="py-4">Total Purchase Amount: ${totalPrice}</p>
             <div className="modal-action">
               <form method="dialog">
                 <button className="btn" onClick={handleHome}>

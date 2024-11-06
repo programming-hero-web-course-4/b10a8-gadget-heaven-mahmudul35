@@ -25,9 +25,11 @@ const Product = ({ product, mobile }) => {
         <div className="card-body">
           <h2 className="card-title">{product_title}</h2>
           <p>{product_price}</p>
-          <div className="card-actions justify-end">
+          <div className="card-actions ">
             <Link to={`/product/${product_id}`}>
-              <button className="btn btn-primary">View Details </button>
+              <button className="border-2 border-[#9538E2] text-[#9538E2] px-4 py-2 rounded-full">
+                View Details{" "}
+              </button>
             </Link>
           </div>
         </div>

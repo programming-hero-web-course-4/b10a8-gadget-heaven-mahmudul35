@@ -68,18 +68,29 @@ const Faq = () => {
     document.title = "FAQ and Support";
   }, []);
   return (
-    <div className="container mx-auto mt-24">
-      {FAQ.map((faq) => (
-        <div className="collapse collapse-arrow bg-base-200 mb-2">
-          <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
-            {faq.question}
+    <div>
+      <div className="mx-11 flex flex-col items-center text-center space-y-6 bg-[#9538E2] h-[250px] rounded-2xl">
+        <h1 className="text-5xl font-bold text-white w-[1100px] mt-14">
+          FAQ and Support
+        </h1>
+        <p className="text-white w-[790px]">
+          Explore the latest gadgets that will take your experience to the next
+          level. From smart devices to the coolest accessories, we have it all!
+        </p>
+      </div>
+      <div className="container mx-auto mt-14">
+        {FAQ.map((faq) => (
+          <div className="collapse collapse-arrow bg-base-200 mb-2">
+            <input type="radio" name="my-accordion-2" />
+            <div className="collapse-title text-xl font-medium">
+              {faq.question}
+            </div>
+            <div className="collapse-content">
+              <p>{faq.answer}</p>
+            </div>
           </div>
-          <div className="collapse-content">
-            <p>{faq.answer}</p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
