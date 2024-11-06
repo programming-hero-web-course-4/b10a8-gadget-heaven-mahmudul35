@@ -1,8 +1,28 @@
-# React + Vite
+# Gadget Heaven
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🔗 Live Link
 
-Currently, two official plugins are available:
+https://gadget-heaven-mahmudul-20.surge.sh/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Requirement Document Link
+
+https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf?fbclid=IwZXh0bgNhZW0CMTEAAR2iIwBC4fEDueOq71zQVMU5uqhduwByagd95paJWnUfA24m-7gWVmPDsok_aem__nWwZ0JO2qW6cD4a_aiS8A
+
+### React Fundamental Concepts Used
+
+- Reusable components
+- Props
+- Hooks: useState,useEffect, useLocation, and useNavigate, useParams.
+- React Router Dom
+
+### Data Management
+
+- **LocalStorage**: use local storage for data management
+
+### Features
+
+- Categorywise data load
+- Add product to cart list and can sort by price
+- Users can save items to a wishlist
+- Displays a Composed Chart with Price vs. Product Name using recharts.
+- Shows toast for adding product to cart and wishlist
