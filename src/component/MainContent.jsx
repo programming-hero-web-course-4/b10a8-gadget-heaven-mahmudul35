@@ -60,14 +60,16 @@ const MainContent = () => {
             Accessories
           </button>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-28 lg:w-[80%] ">
-          {filteredProducts.length > 0 ? (
-            filteredProducts.map((product) => (
-              <Product key={product.id} product={product} />
-            ))
-          ) : (
-            <h1 className="text-3xl">No products found</h1>
-          )}
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-3  ">
+            {filteredProducts.length > 0 ? (
+              filteredProducts.map((product) => (
+                <Product key={product.id} product={product} />
+              ))
+            ) : (
+              <h1 className="text-3xl">No products found</h1>
+            )}
+          </div>
         </div>
       </div>
     </div>
