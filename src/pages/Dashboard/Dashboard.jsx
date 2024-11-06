@@ -108,8 +108,9 @@ const Dashboard = () => {
                     Sort By Price
                   </button>
                   <button
+                    disabled={cart.length === 0}
                     onClick={handlePurchase}
-                    className="btn btn-secondary w-32 rounded-full ml-3 font-bold"
+                    className="btn btn-secondary w-32 rounded-full ml-3 font-bold "
                   >
                     Purchase
                   </button>

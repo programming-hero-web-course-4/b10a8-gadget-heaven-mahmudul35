@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className=" ml-9 mr-9">
       <div
         className={`navbar  justify-around items-center ${
-          pathname === "/" ? "bg-[#9538E2] mt-3 rounded-t-2xl " : "bg-slate-100"
+          pathname === "/" ? "bg-[#9538E2] mt-3 rounded-t-2xl " : ""
         }`}
       >
         <div>

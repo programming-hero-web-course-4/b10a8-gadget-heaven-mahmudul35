@@ -1,8 +1,9 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Banner from "../../assets/banner.jpg";
 const HomeBanner = () => {
   const { pathname } = useLocation();
+  const navigate = useNavigate();
   return (
     <div className=" mx-9  relative h-screen mb-20">
       <div
@@ -17,7 +18,10 @@ const HomeBanner = () => {
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>
-        <button className="bg-white p-3 rounded-full text-[#9538E2] font-bold">
+        <button
+          className="bg-white p-3 rounded-full text-[#9538E2] font-bold"
+          onClick={() => navigate("/dashboard")}
+        >
           Shop Now
         </button>
       </div>
