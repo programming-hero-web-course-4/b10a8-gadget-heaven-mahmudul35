@@ -5,9 +5,9 @@ const HomeBanner = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
   return (
-    <div className=" mx-9  relative h-screen mb-20">
+    <div className=" mx-9   h-screen mb-20">
       <div
-        className={`flex flex-col items-center text-center space-y-6 bg-[#9538E2] h-[650px] ${
+        className={`flex relative flex-col items-center text-center space-y-6 bg-[#9538E2] h-[650px] ${
           pathname == "/" ? "rounded-b-2xl" : "rounded-2xl"
         }`}
       >
@@ -25,11 +25,11 @@ const HomeBanner = () => {
           Shop Now
         </button>
       </div>
-      <div className="absolute bottom-24 left-0 right-0 border-2 border-white p-3 md:w-[1072px] mx-auto rounded-xl">
+      <div className="absolute  md:bottom-1 left-0 right-0 border-2 border-white p-3 md:w-[1072px] mx-auto rounded-xl">
         <img
           src={Banner}
           alt=""
-          className="h-[500px] md:w-[1062px] mx-auto rounded-xl"
+          className="h-[450px]  md:w-[1062px] mx-auto rounded-xl"
         />
       </div>
     </div>

@@ -4,11 +4,7 @@ import Product from "./Product";
 const MainContent = () => {
   const [products, setAllProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("all");
-  // useEffect(() => {
-  //   fetch("./AllProductData.json")
-  //     .then((res) => res.json())
-  //     .then((json) => setAllProducts(json));
-  // }, []);
+
   const data = useLoaderData();
   console.log(data);
   const handleCategoryClick = (category) => {
@@ -22,55 +18,55 @@ const MainContent = () => {
 
   return (
     <div>
-      <h1 className="text-center text-3xl font-bold mb-7">
+      <h1 className="text-center text-4xl font-bold mb-10 ">
         Explore Cutting-Edge Gadgets
       </h1>
       <div className="flex mx-12">
-        <div className="flex flex-col bg-slate-500 border-1 p-3 rounded-lg w-52 h-96 space-y-4">
+        <div className="flex flex-col  border  p-3 rounded-lg w-[15%] h-[450px] space-y-4">
           <button
-            className="bg-white p-3 rounded-lg hover:bg-purple-800 hover:text-white"
+            className="bg-slate-100 p-3 rounded-lg hover:bg-purple-800 hover:text-white"
             onClick={() => handleCategoryClick("all")}
           >
             All
           </button>
           <button
-            className="bg-white p-3 rounded-lg hover:bg-purple-800 hover:text-white"
+            className="bg-slate-100 p-3 rounded-lg hover:bg-purple-800 hover:text-white"
             onClick={() => handleCategoryClick("phones")}
           >
             Mobile
           </button>
           <button
-            className="bg-white p-3 rounded-lg hover:bg-purple-800 hover:text-white"
+            className="bg-slate-100 p-3 rounded-lg hover:bg-purple-800 hover:text-white"
             onClick={() => handleCategoryClick("computers")}
           >
             Laptop
           </button>
           <button
-            className="bg-white p-3 rounded-lg hover:bg-purple-800 hover:text-white"
+            className="bg-slate-100 p-3 rounded-lg hover:bg-purple-800 hover:text-white"
             onClick={() => handleCategoryClick("smart watches")}
           >
             Smart Watches
           </button>
           <button
-            className="bg-white p-3 rounded-lg hover:bg-purple-800 hover:text-white"
+            className="bg-slate-100 p-3 rounded-lg hover:bg-purple-800 hover:text-white"
             onClick={() => handleCategoryClick("power banks")}
           >
             Power Banks
           </button>
           <button
-            className="bg-white p-3 rounded-lg hover:bg-purple-800 hover:text-white"
+            className="bg-slate-100 p-3 rounded-lg hover:bg-purple-800 hover:text-white"
             onClick={() => handleCategoryClick("accessories")}
           >
             Accessories
           </button>
         </div>
-        <div className="grid grid-cols-3 gap-8 ml-44">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-28 lg:w-[80%] ">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product) => (
               <Product key={product.id} product={product} />
             ))
           ) : (
-            <h1>No products found</h1>
+            <h1 className="text-3xl">No products found</h1>
           )}
         </div>
       </div>

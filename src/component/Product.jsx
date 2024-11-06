@@ -14,7 +14,7 @@ const Product = ({ product, mobile }) => {
 
   return (
     <div>
-      <div className="card bg-base-100 w-96 shadow-xl">
+      <div className="card bg-base-100 w-[350px] shadow-xl">
         <figure>
           <img
             src={product_image}

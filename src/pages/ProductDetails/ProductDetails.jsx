@@ -1,3 +1,5 @@
+import "@smastrom/react-rating/style.css";
+import "font-awesome/css/font-awesome.min.css";
 import React, { useEffect, useState } from "react";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
@@ -11,6 +13,7 @@ const ProductDetails = () => {
   }, []);
 
   const [disabled, setDisabled] = useState(false);
+  const [ratingg, setRating] = useState(0);
 
   const { productId } = useParams();
   const id = parseInt(productId);
@@ -68,7 +71,11 @@ const ProductDetails = () => {
           <p className="font-bold my-4">Rating</p>
           <div className="flex justify-between">
             <p>
-              <Rating />
+              <Rating
+                emptySymbol="fa fa-star-o fa-2x "
+                fullSymbol="fa fa-star fa-2x text-[#FFD700]"
+                fractions={2}
+              />
             </p>
             <p className="bg-slate-50 p-2 rounded-3xl">{rating}</p>
           </div>
